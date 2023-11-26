@@ -1,4 +1,6 @@
-<div style="display: flex;
+<div style="
+width: 100%;
+    display: flex;
  flex-direction: column;
  flex-wrap: nowrap;
  justify-content: center;
