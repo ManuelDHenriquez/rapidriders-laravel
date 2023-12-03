@@ -22,10 +22,14 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-12 mb-4">
-                <a href="{{ route('comercios.registrarComercio') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Nuevo Comercio</a>
+                <a href="{{ route('comercios.registrarComercio') }}"
+                    class="btn btn-primary">
+                    <i class="fa-solid fa-plus"></i> Nuevo Comercio
+                </a>
 
             </div>
-            <table class="table table-hover table-striped table-bordered">
+            <table
+              class="table table-hover table-striped table-bordered">
                 <thead>
                     <tr>
                         <th scope="col">Nombre</th>
@@ -38,7 +42,13 @@
                     <tr>
                         <td>{{ $comercio->nombre }}</td>
                         <td>{{ $comercio->direccion }}</td>
-                        <td class="text-center"><a class="btn btn-danger" href="{{ route('comercios.eliminar', $comercio->idcomercio) }}"><i class="fa-solid fa-trash"></i></a></td>
+                        <td class="text-center">
+                            <a
+                              class="btn btn-danger"
+                              href="{{ route('comercios.eliminar', $comercio->idcomercio) }}">
+                                <i class="fa-solid fa-trash"></i>
+                            </a>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
