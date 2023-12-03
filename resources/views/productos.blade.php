@@ -21,7 +21,13 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-12 mb-4">
-                <a class="btn btn-primary" href="{{ route('productos.registrarProducto') }}" ><i class="fa-solid fa-plus"></i> Nuevo Producto</a>
+                <a
+                  class="btn btn-primary"
+                  href="{{ route('productos.registrarProducto') }}"
+                  ><i
+                  class="fa-solid fa-plus"></i>
+                  Nuevo
+                  Producto</a>
 
             </div>
             <table class="table table-hover table-striped table-bordered">
@@ -39,7 +45,11 @@
                         <td>{{ $producto->nombre }}</td>
                         <td>{{ $producto->descripcion }}</td>
                         <td>{{ $producto->precio }}</td>
-                        <td class="text-center"><a class="btn btn-danger" href="{{ route('productos.eliminar', $producto->idproducto) }}"><i class="fa-solid fa-trash"></i></a></td>
+                        <td
+                          class="text-center"><a
+                          class="btn btn-danger"
+                          href="{{ route('productos.eliminar', $producto->idproducto) }}"><i
+                          class="fa-solid fa-trash"></i></a></td>
                     </tr>
                     @endforeach
                 </tbody>

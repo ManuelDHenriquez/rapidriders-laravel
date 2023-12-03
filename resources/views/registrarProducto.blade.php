@@ -29,15 +29,31 @@
                 <div class="row">
                     <div class="mb-2 col-md-6">
                         <label for="txtNombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" name="nombre" id="txtNombre" placeholder="Ingrese nombre del Producto">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="nombre"
+                          id="txtNombre"
+                          placeholder="Ingrese nombre del Producto">
                     </div>
                     <div class="mb-2 col-md-6">
                         <label for="txtDireccion" class="form-label">Descripción</label>
-                        <input type="text" class="form-control" rows="3" name="descripcion" id="txtDireccion" placeholder="Ingrese descripción del Producto">
+                        <input
+                          type="text"
+                          class="form-control"
+                          rows="3"
+                          name="descripcion"
+                          id="txtDireccion"
+                          placeholder="Ingrese descripción del Producto">
                     </div>
                     <div class="mb-2 col-md-6">
                         <label for="txtLat" class="form-label">Precio</label>
-                        <input type="text" class="form-control" name="precio" id="txtLat" placeholder="Ingese precio del Producto">
+                        <input
+                          type="text"
+                          class="form-control"
+                          name="precio"
+                          id="txtLat"
+                          placeholder="Ingese precio del Producto">
                     </div>
                     <div class="mb-2 col-md-6">
                         <label for="txtLon" class="form-label">Comercio</label>

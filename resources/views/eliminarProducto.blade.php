@@ -25,7 +25,11 @@
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger"><i class="fa-solid fa-user-xmark"></i> Eliminar</button>
 
-                <a href="{{ route('productos.productos') }}" class="btn btn-primary"><i class="fa-solid fa-ban"></i> Cancelar</a>
+                <a
+                  href="{{ route('productos.productos') }}"
+                  class="btn btn-primary"><i
+                  class="fa-solid fa-ban"></i>
+                  Cancelar</a>
             </form>
         </div>
     </div>
