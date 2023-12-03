@@ -38,13 +38,9 @@
                                 <label for="txtApellido" class="form-label">Apellido</label>
                                 <input type="text" class="form-control" name="apellido" id="txtApellido" placeholder="Ingrese su apellido">
                             </div>
-                            <div class="mb-2 col-md-12">
+                            <div class="mb-2 col-md-6">
                                 <label for="txtDireccion" class="form-label">Dirección</label>
                                 <input type="text" class="form-control" rows="3" name="direccion" id="txtDireccion" placeholder="Ingrese su dirección">
-                            </div>
-                            <div class="mb-2 col-md-6">
-                                <label for="txtTelefono" class="form-label">Teléfono</label>
-                                <input type="text" class="form-control" name="telefono" id="txtTelefono" placeholder="Ingrese su teléfono">
                             </div>
                             <div class="mb-2 col-md-6">
                                 <label for="txtEmail" class="form-label">Correo Electrónico</label>
