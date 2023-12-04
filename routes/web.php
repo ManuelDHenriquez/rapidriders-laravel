@@ -5,6 +5,7 @@ use App\Http\Controllers\clienteController;
 use App\Http\Controllers\comercioController;
 use App\Http\Controllers\motoristaController;
 use App\Http\Controllers\productosController;
+use App\Http\Controllers\carritoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -74,6 +75,25 @@ Route::delete('/productoEliminar/{id}', [productosController::class, 'productoEl
 Route::get(
     '/registroMotorista',
     [motoristaController::class, 'registrarMotorista']
-)->name('usuarios.registrarMotorista');
+)->name('motoristas.registrarMotorista');
 
-Route::post('/storeMotorista', [motoristaController::class, 'storeMotorista'])->name('usuario.storeMotorista');
+Route::post('/storeMotorista', [motoristaController::class, 'storeMotorista'])->name('motoristas.storeMotorista');
+
+Route::get('/motoristas', [motoristaController::class, 'motoristas'])->name('motoristas.motoristas');
+
+Route::get(
+    '/eliminar/motorista/{id}',
+    [motoristaController::class, 'eliminarMotorista']
+)->name('motoristas.eliminarMotorista');
+
+Route::delete('/motoristaEliminar/{id}', [motoristaController::class, 'motoristaEliminar'])->name('motoristas.delete');
+
+
+// Controladores de Comercios 
+
+Route::get('/carrito', [carritoController::class, 'comercios'])->name('carrito.comercios');
+
+Route::get('/carrito/{id}', [carritoController::class, 'productos'])->name('carrito.productos');
+
+Route::post('/crearPedido', [carritoController::class, 'crearPedido'])->name('carrito.crearPedido');
+

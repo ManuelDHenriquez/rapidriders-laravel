@@ -25,7 +25,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="{{ route('usuario.storeMotorista') }}" method="post" id="registerClient">
+                <form action="{{ route('motoristas.storeMotorista') }}" method="post" id="registerClient">
                     @csrf
                     @method('POST')
                     <div class="col-12">
@@ -41,7 +41,7 @@
 
                         </div>
                         <div class="col-md-12 my-2 text-center">
-                            <button type="submit" class="btn btn-warning" id="btnRegistrar" disabled>Registrarse</button>
+                            <button type="submit" class="btn btn-warning" id="btnRegistrar">Registrarse</button>
                         </div>
                     </div>
                 </form>
