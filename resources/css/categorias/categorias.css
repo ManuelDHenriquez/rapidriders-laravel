@@ -122,3 +122,7 @@ textarea {
   background-color: #fdb700 !important;
 }
 
+a {
+  cursor: pointer !important;
+}
+

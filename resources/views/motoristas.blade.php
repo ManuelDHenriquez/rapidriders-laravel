@@ -27,6 +27,11 @@
                   ><i
                   class="fa-solid fa-plus"></i>
                   Nuevo Motorista</a>
+                <a
+                  href="{{ route('carrito.comercios') }}"
+                  class="btn btn-primary">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Carrito</a>
 
             </div>
             <table class="table table-hover table-striped">

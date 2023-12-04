@@ -4,6 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+class Carrito {
+    public $descripcion;
+    public $idcliente;
+    public $idmotorista;
+    public $idcomercio;
+    public $productos;
+    public $tarifa;
+}
+
 class carritoController extends Controller
 {
     //
@@ -45,10 +54,33 @@ class carritoController extends Controller
 
     public function crearPedido ( Request $request ) {
 
-        $descripcion = $request->input("idcomercio");
+        $client = new \GuzzleHttp\Client(); // GuzzleHttp\Client
 
-        
-        return $request;
+        $nvoPedido = new Carrito();
+        $nvoPedido->descripcion = $request->input("descripcion");
+        $nvoPedido->idcliente = $request->input("idcliente");
+        $nvoPedido->idmotorista = $request->input("idmotorista");
+        $nvoPedido->idcomercio = $request->input("idcomercio");
+        $nvoPedido->productos = $request->input("productos");
+        $nvoPedido->tarifa = $request->input("tarifa");
+
+
+
+        $response = $client->request('POST', 'http://localhost:8080/api/pedido/crearPedido', [
+            'json' => [
+                'descripcion' => $nvoPedido->descripcion,
+                'tarifa' => $nvoPedido->tarifa,
+                'detallepedido' => []
+            ]
+        ]);
+
+
+        $status = $response->getStatusCode();
+        if ($status == 200) {
+            return redirect()->route('carrito.comercios');
+         } else {
+            return redirect()->route('carrito.comercios');
+        }
     }
 
 }

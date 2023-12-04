@@ -26,7 +26,7 @@
                 <a id="btnCarrito"><i class="fas fa-shopping-cart fa-2x"></i></a>
             </div>
             <div class="back">
-                <a onclick="history.back()"><i class="fas fa-arrow-left fa-2x"></i></a>
+                <a onclick="history.back()"><i class="fas fa-circle-left fa-2x"></i></a>
             </div>
         </div>
     </div>
@@ -407,15 +407,6 @@
     let producto = {};
     let totalCarrito = 0;
     let idProduct = 0;
-
-    // letiables de usuario
-    const idUser = localStorage.getItem("id");
-    const nombreCompleto = localStorage.getItem("usuario");
-    const ntarjeta = localStorage.getItem("nTarjeta");
-    const expira = localStorage.getItem("expira");
-    const cvv = localStorage.getItem("cvv");
-    const telefono = localStorage.getItem("telefonoUser");
-    const correo = localStorage.getItem("correo");
 
     // console.log("Pruena de usuario");
 

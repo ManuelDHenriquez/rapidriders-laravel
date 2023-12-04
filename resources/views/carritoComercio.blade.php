@@ -14,7 +14,7 @@
 <section id="categorias">
         <div class="fondo">
             <img src="../resources/images/logos/LOGOrapid-riders.png" alt="rapid-riders.png">
-            <h3>RAPID RIDERS</h3>
+            <h3><a onclick="history.back()"><i class="fa-solid fa-circle-left"></i></a>    RAPID RIDERS</h3>
             <h5>Comercios</h5>
         </div>
 

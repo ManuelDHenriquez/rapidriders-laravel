@@ -15,7 +15,8 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12 titulo">
-                <h1 class="my-4">Clientes</h1>
+                
+                <h1 class="my-4"> Clientes</h1>
             </div>
         </div>
     </div>
@@ -23,7 +24,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 m-4">
-                    <a href="{{ route('clientes.registrarCliente') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Registrar Cliente</a>
+                    
+                    <a
+                      href="{{ route('clientes.registrarCliente') }}"
+                      class="btn btn-primary"><i
+                      class="fa-solid fa-plus"></i>
+                      Registrar
+                      Cliente</a>
+                    <a
+                      href="{{ route('carrito.comercios') }}"
+                      class="btn btn-primary">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Carrito</a>
                 </div>
             </div>
         </div>

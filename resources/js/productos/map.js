@@ -76,15 +76,6 @@ function initMap() {
           infoWindow.open(map);
           map.setCenter(pos);
 
-
-        //   const marker = new google.maps.Marker({
-        //     map: map,
-        //     position: new google.maps.LatLng(pos.lat, pos.lng),
-        //     title: 'Ubicacion actual',
-        //     infoWindow: new google.maps.InfoWindow({
-        //       content: 'Ubicacion actual'
-        //     })
-        //   });
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());

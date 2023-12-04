@@ -35,7 +35,7 @@ class clienteController extends Controller
         $nvoCliente->apellido = $request->input("apellido");
         $nvoCliente->correo = $request->input("email");
         $nvoCliente->direccion = $request->input("direccion");
-        $nvoCliente->contrasena = password_hash($request->input("password"), PASSWORD_DEFAULT);
+        $nvoCliente->contrasena = md5($request->input("password"));
         $nvoCliente->pedidos = [];
 
 
